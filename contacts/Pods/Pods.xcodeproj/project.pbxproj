@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040C828754F40DE9739ACE77AC0E3111 /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B31511724A24D11D7C60B2569EA18 /* NSNumber+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C21647725B88B5CCA863869FEF8443B /* NSArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8BD1F990BF937BE923BA3D29238AE1 /* NSArray+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CB906BC134E7D67C90BDEB654430104 /* ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1C38BEBDEC4504BC2FDC6C58A3A746 /* ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EDA31D1711ED3065FF792503C46AA3A /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B69467ADF29F13DFDDE87C02201E5F /* NSMutableArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		417EDDA78E8FB150FFB224359888CE9E /* NSNumber+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7D63BBA5CD6B34A5FD153DD045B7DE /* NSNumber+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		460C3E70DB23D882498D24DE7DCB6EA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */; };
+		50298ED40A5350D05274F750E7812AB4 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = CA30BE266485503CB9943880C768F5C8 /* NSArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		558F75390782F9DACCDED3AD29D4795E /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C0B357D78D7800B21E44BDB111C00F /* NSDictionary+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57B7FF223CDB7BA9916CFE3B055F627F /* NSSet+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 574FE1D5B66003FDC7A524C0C44EE280 /* NSSet+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E58D98A82FE1887D39E0F22FC1FA13 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D431BB44E0568FA2FA12DA121DA29856 /* CoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		676983B259263C0AA8B620E34ED4E3B3 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 39171D078C032CC96956BD4039A82187 /* NSManagedObject+ActiveRecord.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		794B71FD417CF7853573291F85E04746 /* NSManagedObject+Mappings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C8DFD4CEDB20C17C0C86B6858DDF3 /* NSManagedObject+Mappings.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7956601836C1FC89B87F5E3716A7AA55 /* NSDictionary+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A47805D7E28B5A5FD656B98C3F56CAE /* NSDictionary+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AF988D455AE3728B7D06B2D5F14699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */; };
+		86EC7C8A9F36B2B73207507462CA59BE /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2373DD561F37EB01B3FC879D79F6DE8 /* CoreDataManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F256CF7AA6F4376D9B9B36F87FB49A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */; };
+		9296F09E2DD8B55C03490506531B5267 /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5E8029F59FFCEF2AA1BE33485C382 /* NSSet+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		96B57031FF314B87901A902FFD0EA952 /* NSMutableArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2424A91C580BC2E9B904F2A685128CDF /* NSMutableArray+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A897DE8916E03F25C015D211DE18D8C5 /* NSString+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8847C3F93AC6DA835798C3632AB0E9 /* NSString+ObjectiveSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC06DA7BA3EB6B04BB83EB2F7C046258 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 82033834B38220D9BA776573DCC96D7D /* NSString+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACA7206BD03DC2A0DB182D59F4813C6A /* Pods-contacts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A222A1CE50EBD26D90B7FE846D1A1A6C /* Pods-contacts-dummy.m */; };
+		C7FC5260C212B5A0BEC1C94F6E0AED8F /* ObjectiveSugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD45BABEE6B719D0941137E1FDD17987 /* ObjectiveSugar-dummy.m */; };
+		D288819AAAD3F12CC5C77067344CB553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */; };
+		E259EADD6B0CFA05067B82C9ED6EBD82 /* NSManagedObject+Mappings.h in Headers */ = {isa = PBXBuildFile; fileRef = 81372047047A12477125DB0FC9CC09C5 /* NSManagedObject+Mappings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27A94B8207D69FC64F1E586DB13F449 /* ObjectiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0368FCFB9CD2941C456D6D5C942EB6 /* ObjectiveRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F484769D18CA46A5A52D08E6B55BC07E /* ObjectiveRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9982E4EAF2219350E7E4BD019E49AB0 /* ObjectiveRecord-dummy.m */; };
+		F7D2F001D19176DF96D6339008193214 /* NSManagedObject+ActiveRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 7601FCABF5A5454C13163FF17E3BE005 /* NSManagedObject+ActiveRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B400C41EA1AB526E58A852A0606E106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 417593D327BEC11675C50FBC82143D8B;
+			remoteInfo = ObjectiveSugar;
+		};
+		A90DCAC981744009671116FECB3C1191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 417593D327BEC11675C50FBC82143D8B;
+			remoteInfo = ObjectiveSugar;
+		};
+		B901F6B6B16541713E8364E7BD77263E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39D90ABD25D0434BC8164064A62A5AD0;
+			remoteInfo = ObjectiveRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14E0C8EFC0DA33779176D4563BEBD28A /* Pods-contacts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-contacts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		188D84AA1A22BFFF8EB1B72783709D5B /* libObjectiveSugar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libObjectiveSugar.a; path = libObjectiveSugar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7C8DFD4CEDB20C17C0C86B6858DDF3 /* NSManagedObject+Mappings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Mappings.m"; path = "Classes/NSManagedObject+Mappings.m"; sourceTree = "<group>"; };
+		23871F3A1C05C50A0EBA1FD5577FE5AE /* Pods-contacts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-contacts-resources.sh"; sourceTree = "<group>"; };
+		2424A91C580BC2E9B904F2A685128CDF /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+ObjectiveSugar.h"; path = "Classes/NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		2A47805D7E28B5A5FD656B98C3F56CAE /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ObjectiveSugar.h"; path = "Classes/NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39171D078C032CC96956BD4039A82187 /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+ActiveRecord.m"; path = "Classes/NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		3E534B208EBC7286E96AFF50A3312FB4 /* libObjectiveRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libObjectiveRecord.a; path = libObjectiveRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DB7B5F3D57FE36EC91E9547495A359 /* libPods-contacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-contacts.a"; path = "libPods-contacts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5B31511724A24D11D7C60B2569EA18 /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+ObjectiveSugar.m"; path = "Classes/NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		574FE1D5B66003FDC7A524C0C44EE280 /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+ObjectiveSugar.h"; path = "Classes/NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		5F1C38BEBDEC4504BC2FDC6C58A3A746 /* ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveSugar.h; path = Classes/ObjectiveSugar.h; sourceTree = "<group>"; };
+		642DF42B762B53E95469C2D583C3F6E3 /* ObjectiveSugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveSugar-prefix.pch"; sourceTree = "<group>"; };
+		6D0368FCFB9CD2941C456D6D5C942EB6 /* ObjectiveRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveRecord.h; path = Classes/ObjectiveRecord.h; sourceTree = "<group>"; };
+		6D7D63BBA5CD6B34A5FD153DD045B7DE /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ObjectiveSugar.h"; path = "Classes/NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		7601FCABF5A5454C13163FF17E3BE005 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+ActiveRecord.h"; path = "Classes/NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		81372047047A12477125DB0FC9CC09C5 /* NSManagedObject+Mappings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Mappings.h"; path = "Classes/NSManagedObject+Mappings.h"; sourceTree = "<group>"; };
+		82033834B38220D9BA776573DCC96D7D /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ObjectiveSugar.m"; path = "Classes/NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		8560FE27C068358490D82B048B700CF4 /* Pods-contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-contacts.release.xcconfig"; sourceTree = "<group>"; };
+		8B8847C3F93AC6DA835798C3632AB0E9 /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ObjectiveSugar.h"; path = "Classes/NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		8CD71065C05020D93F6E576C4E0600DD /* Pods-contacts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-contacts-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A222A1CE50EBD26D90B7FE846D1A1A6C /* Pods-contacts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-contacts-dummy.m"; sourceTree = "<group>"; };
+		BC8BD1F990BF937BE923BA3D29238AE1 /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+ObjectiveSugar.h"; path = "Classes/NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		CA30BE266485503CB9943880C768F5C8 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ObjectiveSugar.m"; path = "Classes/NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		CD45BABEE6B719D0941137E1FDD17987 /* ObjectiveSugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectiveSugar-dummy.m"; sourceTree = "<group>"; };
+		D431BB44E0568FA2FA12DA121DA29856 /* CoreDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = Classes/CoreDataManager.h; sourceTree = "<group>"; };
+		D9982E4EAF2219350E7E4BD019E49AB0 /* ObjectiveRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectiveRecord-dummy.m"; sourceTree = "<group>"; };
+		DF07DDCBD50D9CC518C39755D2108E45 /* Pods-contacts-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-contacts-frameworks.sh"; sourceTree = "<group>"; };
+		E0B69467ADF29F13DFDDE87C02201E5F /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+ObjectiveSugar.m"; path = "Classes/NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		E3C0B357D78D7800B21E44BDB111C00F /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ObjectiveSugar.m"; path = "Classes/NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		E4A5E8029F59FFCEF2AA1BE33485C382 /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+ObjectiveSugar.m"; path = "Classes/NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		E5B8645FCB27C17CF45BFB250610E54B /* ObjectiveSugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectiveSugar.xcconfig; sourceTree = "<group>"; };
+		F2373DD561F37EB01B3FC879D79F6DE8 /* CoreDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = Classes/CoreDataManager.m; sourceTree = "<group>"; };
+		F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		F8CAE6E0BE55932EC3487712D2398AD4 /* ObjectiveRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectiveRecord-prefix.pch"; sourceTree = "<group>"; };
+		FB31F18CBF3443830976CF88EB539E1C /* ObjectiveRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectiveRecord.xcconfig; sourceTree = "<group>"; };
+		FDF1C60B591C976D9281A3D07508F9BB /* Pods-contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-contacts.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7132927CB4F26FFF33069B77E1710F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F256CF7AA6F4376D9B9B36F87FB49A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5934E6C247EDFC191CE1E128D3FA7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460C3E70DB23D882498D24DE7DCB6EA6 /* CoreData.framework in Frameworks */,
+				D288819AAAD3F12CC5C77067344CB553 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6AE73974BF99B2CD60A9BE92E275B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AF988D455AE3728B7D06B2D5F14699 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AB114145756452FEC5E5262BB321DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E534B208EBC7286E96AFF50A3312FB4 /* libObjectiveRecord.a */,
+				188D84AA1A22BFFF8EB1B72783709D5B /* libObjectiveSugar.a */,
+				47DB7B5F3D57FE36EC91E9547495A359 /* libPods-contacts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13668BE9E119747BB6D77A7B021B1678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A468CD33507D355816D43936A2E24A2 /* ObjectiveRecord */,
+				4186F2DE14EA186ACFAE7229B2E451A9 /* ObjectiveSugar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		32DCDDB30120A4C6F302B52D868BAF1E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47086207122E89BFBABF71C6479BCC80 /* Pods-contacts */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4186F2DE14EA186ACFAE7229B2E451A9 /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				BC8BD1F990BF937BE923BA3D29238AE1 /* NSArray+ObjectiveSugar.h */,
+				CA30BE266485503CB9943880C768F5C8 /* NSArray+ObjectiveSugar.m */,
+				2A47805D7E28B5A5FD656B98C3F56CAE /* NSDictionary+ObjectiveSugar.h */,
+				E3C0B357D78D7800B21E44BDB111C00F /* NSDictionary+ObjectiveSugar.m */,
+				2424A91C580BC2E9B904F2A685128CDF /* NSMutableArray+ObjectiveSugar.h */,
+				E0B69467ADF29F13DFDDE87C02201E5F /* NSMutableArray+ObjectiveSugar.m */,
+				6D7D63BBA5CD6B34A5FD153DD045B7DE /* NSNumber+ObjectiveSugar.h */,
+				4F5B31511724A24D11D7C60B2569EA18 /* NSNumber+ObjectiveSugar.m */,
+				574FE1D5B66003FDC7A524C0C44EE280 /* NSSet+ObjectiveSugar.h */,
+				E4A5E8029F59FFCEF2AA1BE33485C382 /* NSSet+ObjectiveSugar.m */,
+				8B8847C3F93AC6DA835798C3632AB0E9 /* NSString+ObjectiveSugar.h */,
+				82033834B38220D9BA776573DCC96D7D /* NSString+ObjectiveSugar.m */,
+				5F1C38BEBDEC4504BC2FDC6C58A3A746 /* ObjectiveSugar.h */,
+				A4F7279EDBACF84AAF773A97B46D7565 /* Support Files */,
+			);
+			name = ObjectiveSugar;
+			path = ObjectiveSugar;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A81C0CB292E45FAFBFC1DA48D35250D0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47086207122E89BFBABF71C6479BCC80 /* Pods-contacts */ = {
+			isa = PBXGroup;
+			children = (
+				14E0C8EFC0DA33779176D4563BEBD28A /* Pods-contacts-acknowledgements.markdown */,
+				8CD71065C05020D93F6E576C4E0600DD /* Pods-contacts-acknowledgements.plist */,
+				A222A1CE50EBD26D90B7FE846D1A1A6C /* Pods-contacts-dummy.m */,
+				DF07DDCBD50D9CC518C39755D2108E45 /* Pods-contacts-frameworks.sh */,
+				23871F3A1C05C50A0EBA1FD5577FE5AE /* Pods-contacts-resources.sh */,
+				FDF1C60B591C976D9281A3D07508F9BB /* Pods-contacts.debug.xcconfig */,
+				8560FE27C068358490D82B048B700CF4 /* Pods-contacts.release.xcconfig */,
+			);
+			name = "Pods-contacts";
+			path = "Target Support Files/Pods-contacts";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				13668BE9E119747BB6D77A7B021B1678 /* Pods */,
+				0AB114145756452FEC5E5262BB321DD4 /* Products */,
+				32DCDDB30120A4C6F302B52D868BAF1E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A468CD33507D355816D43936A2E24A2 /* ObjectiveRecord */ = {
+			isa = PBXGroup;
+			children = (
+				D431BB44E0568FA2FA12DA121DA29856 /* CoreDataManager.h */,
+				F2373DD561F37EB01B3FC879D79F6DE8 /* CoreDataManager.m */,
+				7601FCABF5A5454C13163FF17E3BE005 /* NSManagedObject+ActiveRecord.h */,
+				39171D078C032CC96956BD4039A82187 /* NSManagedObject+ActiveRecord.m */,
+				81372047047A12477125DB0FC9CC09C5 /* NSManagedObject+Mappings.h */,
+				1E7C8DFD4CEDB20C17C0C86B6858DDF3 /* NSManagedObject+Mappings.m */,
+				6D0368FCFB9CD2941C456D6D5C942EB6 /* ObjectiveRecord.h */,
+				B01DD070A98A18AC6316595CB2F00DB3 /* Support Files */,
+			);
+			name = ObjectiveRecord;
+			path = ObjectiveRecord;
+			sourceTree = "<group>";
+		};
+		A4F7279EDBACF84AAF773A97B46D7565 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5B8645FCB27C17CF45BFB250610E54B /* ObjectiveSugar.xcconfig */,
+				CD45BABEE6B719D0941137E1FDD17987 /* ObjectiveSugar-dummy.m */,
+				642DF42B762B53E95469C2D583C3F6E3 /* ObjectiveSugar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectiveSugar";
+			sourceTree = "<group>";
+		};
+		A81C0CB292E45FAFBFC1DA48D35250D0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7BE07A93D389088D0712B8DA370ED /* CoreData.framework */,
+				3792A683529B65B8837AD54D85BA6912 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B01DD070A98A18AC6316595CB2F00DB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB31F18CBF3443830976CF88EB539E1C /* ObjectiveRecord.xcconfig */,
+				D9982E4EAF2219350E7E4BD019E49AB0 /* ObjectiveRecord-dummy.m */,
+				F8CAE6E0BE55932EC3487712D2398AD4 /* ObjectiveRecord-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectiveRecord";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DEEE7CC95BFEADD6EA0EBF663B57CC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C21647725B88B5CCA863869FEF8443B /* NSArray+ObjectiveSugar.h in Headers */,
+				7956601836C1FC89B87F5E3716A7AA55 /* NSDictionary+ObjectiveSugar.h in Headers */,
+				96B57031FF314B87901A902FFD0EA952 /* NSMutableArray+ObjectiveSugar.h in Headers */,
+				417EDDA78E8FB150FFB224359888CE9E /* NSNumber+ObjectiveSugar.h in Headers */,
+				57B7FF223CDB7BA9916CFE3B055F627F /* NSSet+ObjectiveSugar.h in Headers */,
+				A897DE8916E03F25C015D211DE18D8C5 /* NSString+ObjectiveSugar.h in Headers */,
+				0CB906BC134E7D67C90BDEB654430104 /* ObjectiveSugar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A41F41AF31B5A8DCD3E042A6E67BA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E58D98A82FE1887D39E0F22FC1FA13 /* CoreDataManager.h in Headers */,
+				F7D2F001D19176DF96D6339008193214 /* NSManagedObject+ActiveRecord.h in Headers */,
+				E259EADD6B0CFA05067B82C9ED6EBD82 /* NSManagedObject+Mappings.h in Headers */,
+				F27A94B8207D69FC64F1E586DB13F449 /* ObjectiveRecord.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39D90ABD25D0434BC8164064A62A5AD0 /* ObjectiveRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C263467CF3EB362D75A9C56B5CEAB51F /* Build configuration list for PBXNativeTarget "ObjectiveRecord" */;
+			buildPhases = (
+				1111BCD19C5BF23560C447CAD3D27869 /* Sources */,
+				C5934E6C247EDFC191CE1E128D3FA7AF /* Frameworks */,
+				49A41F41AF31B5A8DCD3E042A6E67BA1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80398D9D69D70667CD384D85A1B6BED3 /* PBXTargetDependency */,
+			);
+			name = ObjectiveRecord;
+			productName = ObjectiveRecord;
+			productReference = 3E534B208EBC7286E96AFF50A3312FB4 /* libObjectiveRecord.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		417593D327BEC11675C50FBC82143D8B /* ObjectiveSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958D343F8D5CB6E0E9666B8510B69B5D /* Build configuration list for PBXNativeTarget "ObjectiveSugar" */;
+			buildPhases = (
+				2B60AF071AAA1A9592AF72BD5522B96D /* Sources */,
+				D6AE73974BF99B2CD60A9BE92E275B0C /* Frameworks */,
+				2DEEE7CC95BFEADD6EA0EBF663B57CC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveSugar;
+			productName = ObjectiveSugar;
+			productReference = 188D84AA1A22BFFF8EB1B72783709D5B /* libObjectiveSugar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5553A423E40E297D396AA24EBA3304AA /* Pods-contacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542403F787566BF81D3E7D175DC11B6C /* Build configuration list for PBXNativeTarget "Pods-contacts" */;
+			buildPhases = (
+				7CA6F3D0EFD2A7EBAEC609E20CABFFFC /* Sources */,
+				7132927CB4F26FFF33069B77E1710F6A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A242DBAC9C3D21A8A0B8E15FA6C009 /* PBXTargetDependency */,
+				D48234E5DCEA27A28A819913FBD77356 /* PBXTargetDependency */,
+			);
+			name = "Pods-contacts";
+			productName = "Pods-contacts";
+			productReference = 47DB7B5F3D57FE36EC91E9547495A359 /* libPods-contacts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0AB114145756452FEC5E5262BB321DD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39D90ABD25D0434BC8164064A62A5AD0 /* ObjectiveRecord */,
+				417593D327BEC11675C50FBC82143D8B /* ObjectiveSugar */,
+				5553A423E40E297D396AA24EBA3304AA /* Pods-contacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1111BCD19C5BF23560C447CAD3D27869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EC7C8A9F36B2B73207507462CA59BE /* CoreDataManager.m in Sources */,
+				676983B259263C0AA8B620E34ED4E3B3 /* NSManagedObject+ActiveRecord.m in Sources */,
+				794B71FD417CF7853573291F85E04746 /* NSManagedObject+Mappings.m in Sources */,
+				F484769D18CA46A5A52D08E6B55BC07E /* ObjectiveRecord-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B60AF071AAA1A9592AF72BD5522B96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50298ED40A5350D05274F750E7812AB4 /* NSArray+ObjectiveSugar.m in Sources */,
+				558F75390782F9DACCDED3AD29D4795E /* NSDictionary+ObjectiveSugar.m in Sources */,
+				1EDA31D1711ED3065FF792503C46AA3A /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				040C828754F40DE9739ACE77AC0E3111 /* NSNumber+ObjectiveSugar.m in Sources */,
+				9296F09E2DD8B55C03490506531B5267 /* NSSet+ObjectiveSugar.m in Sources */,
+				AC06DA7BA3EB6B04BB83EB2F7C046258 /* NSString+ObjectiveSugar.m in Sources */,
+				C7FC5260C212B5A0BEC1C94F6E0AED8F /* ObjectiveSugar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CA6F3D0EFD2A7EBAEC609E20CABFFFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA7206BD03DC2A0DB182D59F4813C6A /* Pods-contacts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80398D9D69D70667CD384D85A1B6BED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveSugar;
+			target = 417593D327BEC11675C50FBC82143D8B /* ObjectiveSugar */;
+			targetProxy = A90DCAC981744009671116FECB3C1191 /* PBXContainerItemProxy */;
+		};
+		A6A242DBAC9C3D21A8A0B8E15FA6C009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveRecord;
+			target = 39D90ABD25D0434BC8164064A62A5AD0 /* ObjectiveRecord */;
+			targetProxy = B901F6B6B16541713E8364E7BD77263E /* PBXContainerItemProxy */;
+		};
+		D48234E5DCEA27A28A819913FBD77356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectiveSugar;
+			target = 417593D327BEC11675C50FBC82143D8B /* ObjectiveSugar */;
+			targetProxy = 0B400C41EA1AB526E58A852A0606E106 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04358EF66A1CA8E6C832AA2D0763F227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB31F18CBF3443830976CF88EB539E1C /* ObjectiveRecord.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveRecord/ObjectiveRecord-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B63BE41FF752FACEF20B450A4DD48EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8560FE27C068358490D82B048B700CF4 /* Pods-contacts.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		633E21E64BB5373B11B303A2C8C4A47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF1C60B591C976D9281A3D07508F9BB /* Pods-contacts.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		782F8A203AA0FAE5E276EE6FA98DE388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B8645FCB27C17CF45BFB250610E54B /* ObjectiveSugar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveSugar/ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8519213774B552CAA5C086B331614519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B8645FCB27C17CF45BFB250610E54B /* ObjectiveSugar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveSugar/ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D2DBEFE6D94D095C76BD45C9D16AE7F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB31F18CBF3443830976CF88EB539E1C /* ObjectiveRecord.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectiveRecord/ObjectiveRecord-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542403F787566BF81D3E7D175DC11B6C /* Build configuration list for PBXNativeTarget "Pods-contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633E21E64BB5373B11B303A2C8C4A47D /* Debug */,
+				5B63BE41FF752FACEF20B450A4DD48EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		958D343F8D5CB6E0E9666B8510B69B5D /* Build configuration list for PBXNativeTarget "ObjectiveSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8519213774B552CAA5C086B331614519 /* Debug */,
+				782F8A203AA0FAE5E276EE6FA98DE388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C263467CF3EB362D75A9C56B5CEAB51F /* Build configuration list for PBXNativeTarget "ObjectiveRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04358EF66A1CA8E6C832AA2D0763F227 /* Debug */,
+				D2DBEFE6D94D095C76BD45C9D16AE7F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
