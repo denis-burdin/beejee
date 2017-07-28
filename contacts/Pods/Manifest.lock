@@ -1,15 +1,20 @@
 PODS:
+  - Groot (2.0):
+    - Groot/Swift (= 2.0)
+  - Groot/Swift (2.0)
   - ObjectiveRecord (1.5.0):
     - ObjectiveSugar
   - ObjectiveSugar (1.1.0)
 
 DEPENDENCIES:
+  - Groot
   - ObjectiveRecord
 
 SPEC CHECKSUMS:
+  Groot: 7543f84980bfb1613750818029d9b927d4378211
   ObjectiveRecord: f290d17272e476b3c881300910e98284200c54b6
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
 
-PODFILE CHECKSUM: 0179c6804012569f4524e56ff69b5954db7267ec
+PODFILE CHECKSUM: 54128dd40bf6aff6e479b8d1d55c278cf8470460
 
 COCOAPODS: 1.2.1

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88D1AD31332D7A1983D15A8B /* libPods-contacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A664122F32D307C6F202B4A1 /* libPods-contacts.a */; };
+		6EC83CD7A21C719632674A91 /* Pods_contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */; };
+		A2019B6B1F2B6109004CAA11 /* Contact+Mappings.m in Sources */ = {isa = PBXBuildFile; fileRef = A2019B6A1F2B6109004CAA11 /* Contact+Mappings.m */; };
+		A2019B6F1F2B63F7004CAA11 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2019B6E1F2B63F7004CAA11 /* DataManager.m */; };
 		A2A0BDA91F2B5362002F4F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDA81F2B5362002F4F5E /* main.m */; };
 		A2A0BDAC1F2B5362002F4F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDAB1F2B5362002F4F5E /* AppDelegate.m */; };
 		A2A0BDAF1F2B5362002F4F5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDAE1F2B5362002F4F5E /* ViewController.m */; };
@@ -29,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2019B691F2B6109004CAA11 /* Contact+Mappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+Mappings.h"; sourceTree = "<group>"; };
+		A2019B6A1F2B6109004CAA11 /* Contact+Mappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+Mappings.m"; sourceTree = "<group>"; };
+		A2019B6D1F2B63F7004CAA11 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		A2019B6E1F2B63F7004CAA11 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		A2A0BDA41F2B5362002F4F5E /* contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A0BDA81F2B5362002F4F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2A0BDAA1F2B5362002F4F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +50,6 @@
 		A2A0BDC01F2B5362002F4F5E /* contactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A0BDC41F2B5362002F4F5E /* contactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contactsTests.m; sourceTree = "<group>"; };
 		A2A0BDC61F2B5362002F4F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A664122F32D307C6F202B4A1 /* libPods-contacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-contacts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88DB7F5EB147945D1BCBD3C /* Pods-contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contacts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-contacts/Pods-contacts.debug.xcconfig"; sourceTree = "<group>"; };
 		F4221F69C0A3AE2EE401C1B7 /* Pods-contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contacts.release.xcconfig"; path = "Pods/Target Support Files/Pods-contacts/Pods-contacts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D1AD31332D7A1983D15A8B /* libPods-contacts.a in Frameworks */,
+				6EC83CD7A21C719632674A91 /* Pods_contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +76,36 @@
 		2AB2956153F439BE2D31C683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A664122F32D307C6F202B4A1 /* libPods-contacts.a */,
+				4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2019B671F2B6069004CAA11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2019B681F2B60D8004CAA11 /* Mappings */,
+				A2A0BDB31F2B5362002F4F5E /* contacts.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A2019B681F2B60D8004CAA11 /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				A2019B691F2B6109004CAA11 /* Contact+Mappings.h */,
+				A2019B6A1F2B6109004CAA11 /* Contact+Mappings.m */,
+			);
+			name = Mappings;
+			sourceTree = "<group>";
+		};
+		A2019B6C1F2B632F004CAA11 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A2019B6D1F2B63F7004CAA11 /* DataManager.h */,
+				A2019B6E1F2B63F7004CAA11 /* DataManager.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		A2A0BD9B1F2B5362002F4F5E = {
@@ -98,6 +131,8 @@
 		A2A0BDA61F2B5362002F4F5E /* contacts */ = {
 			isa = PBXGroup;
 			children = (
+				A2019B6C1F2B632F004CAA11 /* Core */,
+				A2019B671F2B6069004CAA11 /* Model */,
 				A2A0BDAA1F2B5362002F4F5E /* AppDelegate.h */,
 				A2A0BDAB1F2B5362002F4F5E /* AppDelegate.m */,
 				A2A0BDAD1F2B5362002F4F5E /* ViewController.h */,
@@ -106,7 +141,6 @@
 				A2A0BDB61F2B5362002F4F5E /* Assets.xcassets */,
 				A2A0BDB81F2B5362002F4F5E /* LaunchScreen.storyboard */,
 				A2A0BDBB1F2B5362002F4F5E /* Info.plist */,
-				A2A0BDB31F2B5362002F4F5E /* contacts.xcdatamodeld */,
 				A2A0BDA71F2B5362002F4F5E /* Supporting Files */,
 			);
 			path = contacts;
@@ -292,9 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A0BDB51F2B5362002F4F5E /* contacts.xcdatamodeld in Sources */,
+				A2019B6F1F2B63F7004CAA11 /* DataManager.m in Sources */,
 				A2A0BDAF1F2B5362002F4F5E /* ViewController.m in Sources */,
 				A2A0BDAC1F2B5362002F4F5E /* AppDelegate.m in Sources */,
 				A2A0BDA91F2B5362002F4F5E /* main.m in Sources */,
+				A2019B6B1F2B6109004CAA11 /* Contact+Mappings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +529,7 @@
 				A2A0BDCB1F2B5362002F4F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2A0BDCC1F2B5362002F4F5E /* Build configuration list for PBXNativeTarget "contactsTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +538,7 @@
 				A2A0BDCE1F2B5362002F4F5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
