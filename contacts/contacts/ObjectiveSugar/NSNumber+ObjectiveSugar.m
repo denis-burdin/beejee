@@ -3,7 +3,7 @@
 //  Domainchy
 //
 //  Created by Marin Usalj on 11/15/12.
-//  Copyright (c) 2012 mneorr.com | @mneorr | mneorr@gmail.com. All rights reserved.
+//  Copyright (c) 2012 supermar.in | @supermarin. All rights reserved.
 //
 
 #import "NSNumber+ObjectiveSugar.h"
@@ -16,7 +16,7 @@
 }
 
 - (void)timesWithIndex:(void (^)(NSUInteger))block {
-    for (int i = 0; i < self.unsignedIntegerValue; i++)
+    for (NSUInteger i = 0; i < self.unsignedIntegerValue; i++)
         block(i);
 }
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CFFFB8F35169715E49CB9BC1BF1A49ADFFFF5CD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CFFFB8F35169715E49CB9BC1BF1A49ADFFFF5CD9" : 9223372036854775807,
+    "071A0E9B2D9BFF2C4D67F867C3A8287080C6A11C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "404912FF-290D-4E91-A01A-D00E2711508A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CFFFB8F35169715E49CB9BC1BF1A49ADFFFF5CD9" : "test\/",
+    "071A0E9B2D9BFF2C4D67F867C3A8287080C6A11C" : "..\/proovelab\/citymap%20copy"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "contacts",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "contacts\/contacts.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/proovelab\/citymap-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "071A0E9B2D9BFF2C4D67F867C3A8287080C6A11C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/denis-burdin\/beejee.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFFFB8F35169715E49CB9BC1BF1A49ADFFFF5CD9"
+    }
+  ]
+}

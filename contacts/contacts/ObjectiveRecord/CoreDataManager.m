@@ -24,6 +24,7 @@
 
 @implementation CoreDataManager
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize privateManagedObjectContext = _privateManagedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize databaseName = _databaseName;
@@ -77,6 +78,16 @@
     return _managedObjectContext;
 }
 
+- (NSManagedObjectContext *)privateManagedObjectContext {
+    if (_privateManagedObjectContext) return _privateManagedObjectContext;
+    
+    if (self.persistentStoreCoordinator) {
+        _privateManagedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        [_privateManagedObjectContext setPersistentStoreCoordinator:self.persistentStoreCoordinator];
+    }
+    return _privateManagedObjectContext;
+}
+
 - (NSManagedObjectModel *)managedObjectModel {
     if (_managedObjectModel) return _managedObjectModel;
 
@@ -111,6 +122,19 @@
     return YES;
 }
 
+- (BOOL)savePrivateContext {
+    if (self.privateManagedObjectContext == nil) return NO;
+    if (![self.privateManagedObjectContext hasChanges])return NO;
+    
+    NSError *error = nil;
+    
+    if (![self.privateManagedObjectContext save:&error]) {
+        NSLog(@"Unresolved error in saving private context! %@, %@", error, [error userInfo]);
+        return NO;
+    }
+    
+    return YES;
+}
 
 #pragma mark - SQLite file directory
 

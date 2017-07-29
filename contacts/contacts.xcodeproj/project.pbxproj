@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EC83CD7A21C719632674A91 /* Pods_contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */; };
 		A2019B6B1F2B6109004CAA11 /* Contact+Mappings.m in Sources */ = {isa = PBXBuildFile; fileRef = A2019B6A1F2B6109004CAA11 /* Contact+Mappings.m */; };
 		A2019B6F1F2B63F7004CAA11 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2019B6E1F2B63F7004CAA11 /* DataManager.m */; };
+		A266E1981F2C6A1C0066A216 /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E1971F2C6A1C0066A216 /* TestCoreData.m */; };
+		A266E1E31F2CC5980066A216 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A266E1E21F2CC5980066A216 /* CoreData.framework */; };
+		A266E2191F2CC6DC0066A216 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2051F2CC6DC0066A216 /* CoreDataManager.m */; };
+		A266E21A1F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2071F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.m */; };
+		A266E21B1F2CC6DC0066A216 /* NSManagedObject+Mappings.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2091F2CC6DC0066A216 /* NSManagedObject+Mappings.m */; };
+		A266E21C1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E20D1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.m */; };
+		A266E21D1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E20F1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.m */; };
+		A266E21E1F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2111F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.m */; };
+		A266E21F1F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2131F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.m */; };
+		A266E2201F2CC6DC0066A216 /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2151F2CC6DC0066A216 /* NSSet+ObjectiveSugar.m */; };
+		A266E2211F2CC6DC0066A216 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A266E2171F2CC6DC0066A216 /* NSString+ObjectiveSugar.m */; };
 		A2A0BDA91F2B5362002F4F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDA81F2B5362002F4F5E /* main.m */; };
 		A2A0BDAC1F2B5362002F4F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDAB1F2B5362002F4F5E /* AppDelegate.m */; };
 		A2A0BDAF1F2B5362002F4F5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDAE1F2B5362002F4F5E /* ViewController.m */; };
@@ -18,6 +28,7 @@
 		A2A0BDB71F2B5362002F4F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A0BDB61F2B5362002F4F5E /* Assets.xcassets */; };
 		A2A0BDBA1F2B5362002F4F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A0BDB81F2B5362002F4F5E /* LaunchScreen.storyboard */; };
 		A2A0BDC51F2B5362002F4F5E /* contactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A0BDC41F2B5362002F4F5E /* contactsTests.m */; };
+		EEB1CA774535B683241E278C /* Pods_contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0268B480EECF8D5171BB1320 /* Pods_contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +42,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0268B480EECF8D5171BB1320 /* Pods_contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2019B691F2B6109004CAA11 /* Contact+Mappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+Mappings.h"; sourceTree = "<group>"; };
 		A2019B6A1F2B6109004CAA11 /* Contact+Mappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+Mappings.m"; sourceTree = "<group>"; };
 		A2019B6D1F2B63F7004CAA11 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		A2019B6E1F2B63F7004CAA11 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		A266E1961F2C6A1C0066A216 /* TestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreData.h; sourceTree = "<group>"; };
+		A266E1971F2C6A1C0066A216 /* TestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreData.m; sourceTree = "<group>"; };
+		A266E1E21F2CC5980066A216 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A266E2041F2CC6DC0066A216 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		A266E2051F2CC6DC0066A216 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		A266E2061F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		A266E2071F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		A266E2081F2CC6DC0066A216 /* NSManagedObject+Mappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Mappings.h"; sourceTree = "<group>"; };
+		A266E2091F2CC6DC0066A216 /* NSManagedObject+Mappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Mappings.m"; sourceTree = "<group>"; };
+		A266E20A1F2CC6DC0066A216 /* ObjectiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveRecord.h; sourceTree = "<group>"; };
+		A266E20C1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E20D1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E20E1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E20F1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E2101F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E2111F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E2121F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E2131F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E2141F2CC6DC0066A216 /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E2151F2CC6DC0066A216 /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E2161F2CC6DC0066A216 /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		A266E2171F2CC6DC0066A216 /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		A266E2181F2CC6DC0066A216 /* ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSugar.h; sourceTree = "<group>"; };
 		A2A0BDA41F2B5362002F4F5E /* contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A0BDA81F2B5362002F4F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2A0BDAA1F2B5362002F4F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,7 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC83CD7A21C719632674A91 /* Pods_contacts.framework in Frameworks */,
+				A266E1E31F2CC5980066A216 /* CoreData.framework in Frameworks */,
+				EEB1CA774535B683241E278C /* Pods_contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +111,8 @@
 		2AB2956153F439BE2D31C683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4425EB12DD6A0E437C5D2E2E /* Pods_contacts.framework */,
+				A266E1E21F2CC5980066A216 /* CoreData.framework */,
+				0268B480EECF8D5171BB1320 /* Pods_contacts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,8 +140,53 @@
 			children = (
 				A2019B6D1F2B63F7004CAA11 /* DataManager.h */,
 				A2019B6E1F2B63F7004CAA11 /* DataManager.m */,
+				A266E1961F2C6A1C0066A216 /* TestCoreData.h */,
+				A266E1971F2C6A1C0066A216 /* TestCoreData.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		A266E1991F2CC0480066A216 /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				A266E2031F2CC6DC0066A216 /* ObjectiveRecord */,
+				A266E20B1F2CC6DC0066A216 /* ObjectiveSugar */,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+		A266E2031F2CC6DC0066A216 /* ObjectiveRecord */ = {
+			isa = PBXGroup;
+			children = (
+				A266E2041F2CC6DC0066A216 /* CoreDataManager.h */,
+				A266E2051F2CC6DC0066A216 /* CoreDataManager.m */,
+				A266E2061F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.h */,
+				A266E2071F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.m */,
+				A266E2081F2CC6DC0066A216 /* NSManagedObject+Mappings.h */,
+				A266E2091F2CC6DC0066A216 /* NSManagedObject+Mappings.m */,
+				A266E20A1F2CC6DC0066A216 /* ObjectiveRecord.h */,
+			);
+			path = ObjectiveRecord;
+			sourceTree = "<group>";
+		};
+		A266E20B1F2CC6DC0066A216 /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				A266E20C1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.h */,
+				A266E20D1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.m */,
+				A266E20E1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.h */,
+				A266E20F1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.m */,
+				A266E2101F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.h */,
+				A266E2111F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.m */,
+				A266E2121F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.h */,
+				A266E2131F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.m */,
+				A266E2141F2CC6DC0066A216 /* NSSet+ObjectiveSugar.h */,
+				A266E2151F2CC6DC0066A216 /* NSSet+ObjectiveSugar.m */,
+				A266E2161F2CC6DC0066A216 /* NSString+ObjectiveSugar.h */,
+				A266E2171F2CC6DC0066A216 /* NSString+ObjectiveSugar.m */,
+				A266E2181F2CC6DC0066A216 /* ObjectiveSugar.h */,
+			);
+			path = ObjectiveSugar;
 			sourceTree = "<group>";
 		};
 		A2A0BD9B1F2B5362002F4F5E = {
@@ -131,6 +212,7 @@
 		A2A0BDA61F2B5362002F4F5E /* contacts */ = {
 			isa = PBXGroup;
 			children = (
+				A266E1991F2CC0480066A216 /* 3rdparty */,
 				A2019B6C1F2B632F004CAA11 /* Core */,
 				A2019B671F2B6069004CAA11 /* Model */,
 				A2A0BDAA1F2B5362002F4F5E /* AppDelegate.h */,
@@ -224,6 +306,7 @@
 				TargetAttributes = {
 					A2A0BDA31F2B5362002F4F5E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9U3WVKD9E4;
 						ProvisioningStyle = Automatic;
 					};
 					A2A0BDBF1F2B5362002F4F5E = {
@@ -327,9 +410,19 @@
 			files = (
 				A2A0BDB51F2B5362002F4F5E /* contacts.xcdatamodeld in Sources */,
 				A2019B6F1F2B63F7004CAA11 /* DataManager.m in Sources */,
+				A266E21B1F2CC6DC0066A216 /* NSManagedObject+Mappings.m in Sources */,
+				A266E21D1F2CC6DC0066A216 /* NSDictionary+ObjectiveSugar.m in Sources */,
+				A266E2211F2CC6DC0066A216 /* NSString+ObjectiveSugar.m in Sources */,
+				A266E2191F2CC6DC0066A216 /* CoreDataManager.m in Sources */,
+				A266E2201F2CC6DC0066A216 /* NSSet+ObjectiveSugar.m in Sources */,
 				A2A0BDAF1F2B5362002F4F5E /* ViewController.m in Sources */,
+				A266E21E1F2CC6DC0066A216 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				A266E21C1F2CC6DC0066A216 /* NSArray+ObjectiveSugar.m in Sources */,
+				A266E21F1F2CC6DC0066A216 /* NSNumber+ObjectiveSugar.m in Sources */,
 				A2A0BDAC1F2B5362002F4F5E /* AppDelegate.m in Sources */,
+				A266E21A1F2CC6DC0066A216 /* NSManagedObject+ActiveRecord.m in Sources */,
 				A2A0BDA91F2B5362002F4F5E /* main.m in Sources */,
+				A266E1981F2C6A1C0066A216 /* TestCoreData.m in Sources */,
 				A2019B6B1F2B6109004CAA11 /* Contact+Mappings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +560,7 @@
 			baseConfigurationReference = C88DB7F5EB147945D1BCBD3C /* Pods-contacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U3WVKD9E4;
 				INFOPLIST_FILE = contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beejee.contacts;
@@ -479,6 +573,7 @@
 			baseConfigurationReference = F4221F69C0A3AE2EE401C1B7 /* Pods-contacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U3WVKD9E4;
 				INFOPLIST_FILE = contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beejee.contacts;
