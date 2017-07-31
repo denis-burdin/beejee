@@ -1,0 +1,112 @@
+[
+  {
+    "state" : "CA",
+    "city" : "Berkeley",
+    "firstName" : "Brian",
+    "streetAddress1" : "727 Allston Way",
+    "lastName" : "Tracy",
+    "streetAddress2" : "apt. 12",
+    "contactID" : "FF27939F-1F1C-4FF5-A455-DDC4E8C0964B",
+    "zipCode" : "94710",
+    "phoneNumber" : "+1(510)418-41-29"
+  },
+  {
+    "state" : "NJ",
+    "city" : "Belleville",
+    "firstName" : "Tom",
+    "streetAddress1" : "138 Brighton Ave",
+    "lastName" : "Lester",
+    "streetAddress2" : "apt. 8",
+    "contactID" : "5BD0B08F-632C-4E32-8D13-DD83D7C2AD01",
+    "zipCode" : "07109",
+    "phoneNumber" : "+1(646)823-22-22"
+  },
+  {
+    "state" : "PA",
+    "city" : "Philadelphia",
+    "firstName" : "Patrick",
+    "streetAddress1" : "1200 Market St",
+    "lastName" : "Dobens",
+    "streetAddress2" : "apt. 716",
+    "contactID" : "565B2B9F-A5CB-4EBC-9D2A-1130B3224B3E",
+    "zipCode" : "19107",
+    "phoneNumber" : "+1(652)981-31-17"
+  },
+  {
+    "state" : "MO",
+    "city" : "St. Louis",
+    "firstName" : "Evan",
+    "streetAddress1" : "2 Bishop P L Scott Ave",
+    "lastName" : "Barale",
+    "streetAddress2" : "",
+    "contactID" : "B7E7E22B-21B5-406E-8E54-FC712D35E5B1",
+    "zipCode" : "63113",
+    "phoneNumber" : "+1(834)261-19-45"
+  },
+  {
+    "state" : "TN",
+    "city" : "Nashville",
+    "firstName" : "Will",
+    "streetAddress1" : "133 7th Ave N",
+    "lastName" : "Raymer",
+    "streetAddress2" : "apt. 22",
+    "contactID" : "34EA8D69-DCEB-4D61-ABFC-6D672129FFAF",
+    "zipCode" : "37203",
+    "phoneNumber" : "+1(510)789-39-34"
+  },
+  {
+    "state" : "TN",
+    "city" : "Nashville",
+    "firstName" : "Dana",
+    "streetAddress1" : "1026 Herman St",
+    "lastName" : "Keller",
+    "streetAddress2" : "",
+    "contactID" : "F6EAA5EB-8DD9-48A2-A5B8-9CEA9401F994",
+    "zipCode" : "37208",
+    "phoneNumber" : "+1(646)832-11-92"
+  },
+  {
+    "state" : "TN",
+    "city" : "Nashville",
+    "firstName" : "Connie",
+    "streetAddress1" : "705 Douglas Ave",
+    "lastName" : "Vanest",
+    "streetAddress2" : "",
+    "contactID" : "EF83D164-6C4B-4F9B-BBB7-42C915647FA7",
+    "zipCode" : "37207",
+    "phoneNumber" : "+1(832)732-93-83"
+  },
+  {
+    "state" : "GA",
+    "city" : "Atlanta",
+    "firstName" : "Daniel",
+    "streetAddress1" : "554 Broyles St SE",
+    "lastName" : "Adlouni",
+    "streetAddress2" : "",
+    "contactID" : "559FF963-1AE0-4273-916D-968FF07916B8",
+    "zipCode" : "30312",
+    "phoneNumber" : "+1(876)872-22-64"
+  },
+  {
+    "state" : "GA",
+    "city" : "Atlanta",
+    "firstName" : "Cindy",
+    "streetAddress1" : "334 Woodward Ave SE",
+    "lastName" : "Jensen",
+    "streetAddress2" : "",
+    "contactID" : "979E2AD8-4899-49B6-9A69-D7A4722F8D73",
+    "zipCode" : "30312",
+    "phoneNumber" : "+1(832)323-23-86"
+  },
+  {
+    "state" : "GA",
+    "city" : "Marietta",
+    "firstName" : "Matt",
+    "streetAddress1" : "351 Washington Ave NE",
+    "lastName" : "Jaffa",
+    "streetAddress2" : "apt. 29",
+    "contactID" : "01F2592A-3D05-4807-B06A-D09254E9BA90",
+    "zipCode" : "30060",
+    "phoneNumber" : "+1(872)309-17-37"
+  }
+]

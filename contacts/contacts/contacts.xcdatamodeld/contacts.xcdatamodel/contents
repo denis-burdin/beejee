@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
-        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="contactID" attributeType="String" syncable="YES"/>
-        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="streetAddress1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="streetAddress2" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="city"/>
+            </userInfo>
+        </attribute>
+        <attribute name="contactID" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="contactID"/>
+            </userInfo>
+        </attribute>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="firstName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="lastName"/>
+            </userInfo>
+        </attribute>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="phoneNumber"/>
+            </userInfo>
+        </attribute>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="state"/>
+            </userInfo>
+        </attribute>
+        <attribute name="streetAddress1" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="streetAddress1"/>
+            </userInfo>
+        </attribute>
+        <attribute name="streetAddress2" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="streetAddress2"/>
+            </userInfo>
+        </attribute>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="zipCode"/>
+            </userInfo>
+        </attribute>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="contactID"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+        <userInfo>
+            <entry key="JSONKeyPath" value="contactID"/>
+        </userInfo>
     </entity>
     <elements>
-        <element name="Contact" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="Contact" positionX="-63" positionY="-18" width="128" height="178"/>
     </elements>
 </model>

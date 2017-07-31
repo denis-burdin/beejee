@@ -9,7 +9,6 @@
 #import "DataManager.h"
 #import "Contact+Mappings.h"
 #import "ObjectiveRecord.h"
-#import "GRTJSONSerialization.h"
 
 @implementation DataManager
 
@@ -22,43 +21,29 @@
     return manager;
 }
 
-- (void)replicateContactsFromArray:(NSArray*)contacts {
+- (NSArray*)sortedArrayOfContacts {
     
+    NSMutableArray *contacts = [NSMutableArray arrayWithArray:[Contact all]];
     
-//    [GRTJSONSerialization JSONArrayFromObjects:];
-    
-    CFUUIDRef udid = CFUUIDCreate(NULL);
-    NSString *udidString = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, udid));
-    Contact *dbContact = [Contact findOrCreate:@{[Contact primaryKey] : udidString}];
-    [CoreDataManager.sharedManager saveContext];
-}
-
-- (void)testFillDBWithFirstName:(NSString*)firstName lastName:(NSString*)lastName phoneNumber:(NSString*)phoneNumber
-        streetAddress1:(NSString*)streetAddress1 streetAddress2:(NSString*)streetAddress2 city:(NSString*)city
-             state:(NSString*)state zipCode:(NSString*)zipCode {
-    CFUUIDRef udid = CFUUIDCreate(NULL);
-    NSString *udidString = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, udid));
-    Contact *dbContact = [Contact findOrCreate:@{[Contact primaryKey] : udidString}];
-    dbContact.firstName = firstName;
-    dbContact.lastName = lastName;
-    dbContact.phoneNumber = phoneNumber;
-    dbContact.streetAddress1 = streetAddress1;
-    dbContact.streetAddress2 = streetAddress2;
-    dbContact.city = city;
-    dbContact.state = state;
-    dbContact.zipCode = zipCode;
-    
-    [CoreDataManager.sharedManager saveContext];
-}
-
-- (NSArray*)getContacts {
-    
-    NSMutableArray *contacts = [NSMutableArray new];
-    for (Contact *dbContact in [Contact all]) {
-        NSLog(@"");
+    if ([contacts count]) {
+        NSArray *sortedContacts = [contacts sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            NSString* first = [(Contact*)obj1 lastName];
+            NSString* second = [(Contact*)obj2 lastName];
+            
+            if ([first compare:second] == NSOrderedSame) {
+                // if last names are equeal then compare first names alphabetically
+                NSString* firstName1 = [(Contact*)obj1 firstName];
+                NSString* firstName2 = [(Contact*)obj2 firstName];
+                return [firstName1 compare:firstName2] == NSOrderedDescending;
+            } else {
+                return [first compare:second] == NSOrderedDescending;
+            }
+        }];
+        
+        return sortedContacts;
     }
 
-    return contacts;
+    return nil;
 }
 
 @end
